@@ -1,5 +1,9 @@
-<ion-view view-title="Browse">
-  <ion-content>
-    <h1>Browse</h1>
-  </ion-content>
+<ion-view view-title="Subreddits">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item" ng-repeat="subreddit in subreddits" ng-click="goToSubreddit(subreddit.name)">
+                {{subreddit.displayName}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
 </ion-view>
